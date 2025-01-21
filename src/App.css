@@ -1,0 +1,50 @@
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden; /* Hides the overflowing text */
+  white-space: nowrap; /* Ensures text stays on a single line */
+  border-right: 2px solid #00bcd4; /* Cursor effect */
+  width: 20ch; /* Adjust the text length dynamically */
+  animation: typing 3s steps(20, end), blink 0.5s step-end infinite alternate;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #00bcd4;
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  } /* Slight upward movement */
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(4px);
+  } /* Slight downward movement */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-wave {
+  animation: wave 4s ease-in-out infinite; /* Adjust duration as needed */
+}
+
