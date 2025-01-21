@@ -39,7 +39,7 @@ function App() {
         <div className={`transition-all duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'
           }`}>
 
-            <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)]">
+          <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)]">
             <CustomCursor />
 
             {/* Navigation */}
@@ -49,7 +49,7 @@ function App() {
             <HeroSection />
 
             {/* About Section */}
-            <About />
+            <About scrollToSection={scrollToSection} />
 
             {/* Skills Section */}
             <Skills />

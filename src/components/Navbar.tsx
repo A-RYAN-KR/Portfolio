@@ -48,6 +48,12 @@ function Navbar({ scrollToSection }: Props) {
               Projects
             </button>
             <button
+              onClick={() => scrollToSection("contacts")}
+              className="text-gray-700 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+            >
+              Contact
+            </button>
+            <button
               onClick={toggleDarkMode}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Toggle dark mode"

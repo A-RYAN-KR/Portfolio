@@ -47,7 +47,7 @@ const ContactSection = () => {
   `;
 
   return (
-    <div className="relative w-full py-16 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)] overflow-hidden">
+    <div id='contacts' className="relative w-full py-16 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)] overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900/20" />

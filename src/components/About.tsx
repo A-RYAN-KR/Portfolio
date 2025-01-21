@@ -2,13 +2,18 @@ import { Download, Github, Linkedin, Mail, Send } from "lucide-react";
 import ParticleBackground from "./ParticleBackground";
 import Typewriter from "./Typewriter";
 
-const About = () => {
+interface Props {
+  scrollToSection: (section: string) => void;
+}
+
+
+const About = ({ scrollToSection }: Props) => {
   return (
     <section id="about" className="py-20 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)]">
       <div className="relative min-h-screen pt-16 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)] ">
-        <ParticleBackground />
+        {/* <ParticleBackground /> */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 lg:pt-32">
-          <ParticleBackground />
+          {/* <ParticleBackground /> */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
@@ -37,11 +42,13 @@ const About = () => {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 transition-colors">
+                <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 transition-colors"
+                >
                   <Download className="w-5 h-5 mr-2" />
-                  Download CV
+                  Resume
                 </button>
-                <button className="inline-flex items-center px-6 py-3 border border-cyan-500 dark:border-cyan-400 text-base font-medium rounded-lg text-cyan-500 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-gray-800 transition-colors">
+                <button className="inline-flex items-center px-6 py-3 border border-cyan-500 dark:border-cyan-400 text-base font-medium rounded-lg text-cyan-500 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-gray-800 transition-colors"
+                  onClick={() => scrollToSection("contacts")}>
                   <Send className="w-5 h-5 mr-2" />
                   Contact Me
                 </button>
