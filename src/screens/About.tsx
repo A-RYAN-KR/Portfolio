@@ -55,7 +55,7 @@ const About = ({ scrollToSection }: Props) => {
 
               <div className="flex items-center space-x-6">
                 <a
-                  href="#"
+                  href="https://github.com/A-RYAN-KR"
                   className="text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                 >
                   <Github className="w-6 h-6" />

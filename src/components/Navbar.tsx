@@ -36,6 +36,12 @@ function Navbar({ scrollToSection }: Props) {
               About
             </button>
             <button
+              onClick={() => scrollToSection("skills")}
+              className="text-gray-700 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+            >
+              Skills
+            </button>
+            <button
               onClick={() => scrollToSection("work")}
               className="text-gray-700 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
             >
@@ -86,9 +92,8 @@ function Navbar({ scrollToSection }: Props) {
       </div>
       {/* Mobile Side Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 z-40 ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-full w-3/4 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 z-40 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700">
           <span className="text-lg font-bold text-gray-700 dark:text-gray-300">
@@ -114,6 +119,15 @@ function Navbar({ scrollToSection }: Props) {
           </button>
           <button
             onClick={() => {
+              scrollToSection("skills");
+              toggleMobileMenu();
+            }}
+            className="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+          >
+            Skills
+          </button>
+          <button
+            onClick={() => {
               scrollToSection("work");
               toggleMobileMenu();
             }}
@@ -129,6 +143,15 @@ function Navbar({ scrollToSection }: Props) {
             className="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
           >
             Projects
+          </button>
+          <button
+            onClick={() => {
+              scrollToSection("contacts");
+              toggleMobileMenu();
+            }}
+            className="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+          >
+            Contact
           </button>
         </div>
       </div>

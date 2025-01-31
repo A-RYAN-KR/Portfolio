@@ -94,7 +94,7 @@ function Footer({scrollToSection}: Props) {
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-cyan-500" />
-                <span>San Francisco, CA</span>
+                <span>Pune , Maharashtra</span>
               </li>
             </ul>
           </div>

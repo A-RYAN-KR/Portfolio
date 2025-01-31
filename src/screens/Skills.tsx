@@ -13,7 +13,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="w-full py-16 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)] text-gray-900 dark:text-white">
+        <div id='skills' className="w-full py-16 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)] text-gray-900 dark:text-white">
             <div className="max-w-6xl mx-auto px-4">
                 {/* Title and other content remains the same */}
                 <motion.h2
