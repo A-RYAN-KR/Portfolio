@@ -1,6 +1,5 @@
 import { Download, Github, Linkedin, Mail, Send } from "lucide-react";
-import ParticleBackground from "./ParticleBackground";
-import Typewriter from "./Typewriter";
+import Typewriter from "../components/Typewriter";
 
 interface Props {
   scrollToSection: (section: string) => void;
@@ -11,9 +10,9 @@ const About = ({ scrollToSection }: Props) => {
   return (
     <section id="about" className="py-20 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)]">
       <div className="relative min-h-screen pt-16 bg-gradient-to-r from-yellow-50 via-green-50 to-pink-100 dark:from-gray-900 dark:via-[rgb(17,24,39)] dark:to-[rgb(17,24,39)] ">
-        {/* <ParticleBackground /> */}
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 lg:pt-32">
-          {/* <ParticleBackground /> */}
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>

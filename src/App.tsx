@@ -1,17 +1,17 @@
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Work from "./components/Work";
-import Projects from "./components/Projects";
+import About from "./screens/About";
+import Work from "./screens/Work";
+import Projects from "./screens/Projects";
 import Footer from "./components/Footer";
 import "./App.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import CustomCursor from "./components/CustomCursor";
-import Contact from "./components/Contact";
-import Skills from "./components/Skills";
+import Contact from "./screens/Contact";
+import Skills from "./screens/Skills";
 import { useState } from "react";
-import LoadingScreen from "./components/LoadingScreen";
+import LoadingScreen from "./screens/LoadingScreen";
 import HeroSection from "./components/HeroSection";
-import Education from "./components/Education";
+import Education from "./screens/Education";
 
 
 
