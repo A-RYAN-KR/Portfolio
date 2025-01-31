@@ -10,8 +10,8 @@ import Contact from "./screens/Contact";
 import Skills from "./screens/Skills";
 import { useState } from "react";
 import LoadingScreen from "./screens/LoadingScreen";
-import HeroSection from "./components/HeroSection";
 import Education from "./screens/Education";
+import HeroSection from "./screens/HeroSection";
 
 
 

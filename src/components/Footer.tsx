@@ -86,11 +86,11 @@ function Footer({scrollToSection}: Props) {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cyan-500" />
-                <span>alex.chen@example.com</span>
+                <span>a.ryankr.27004@gmail.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cyan-500" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 932531245</span>
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-cyan-500" />

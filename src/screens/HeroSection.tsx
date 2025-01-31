@@ -1,5 +1,6 @@
 import { Facebook, Dribbble, Linkedin, Twitter, Github } from "lucide-react";
-import ParticleBackground from "./ParticleBackground";
+import ParticleBackground from "../components/ParticleBackground";
+
 
 
 function HeroSection() {
